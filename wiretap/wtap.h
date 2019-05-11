@@ -737,6 +737,11 @@ struct ieee_802_11n {
 #define PHDR_802_11_BANDWIDTH_20ULU    23 /* ???, 160 MHz */
 #define PHDR_802_11_BANDWIDTH_20UUL    24 /* ???, 160 MHz */
 #define PHDR_802_11_BANDWIDTH_20UUU    25 /* ???, 160 MHz */
+#define PHDR_802_11_BANDWIDTH_1_MHZ    26 /* HaLow 1 MHz  */
+#define PHDR_802_11_BANDWIDTH_2_MHZ    27 /* HaLow 2 MHz  */
+#define PHDR_802_11_BANDWIDTH_4_MHZ    28 /* HaLow 4 MHz  */
+#define PHDR_802_11_BANDWIDTH_8_MHZ    29 /* HaLow 8 MHz  */
+#define PHDR_802_11_BANDWIDTH_16_MHZ   30 /* HaLow 16 MHz */
 
 /*
  * 802.11ac.
@@ -846,6 +851,7 @@ struct ieee_802_11_phdr {
  */
 #define PHDR_802_11_SOUNDING_PSDU                 0 /* sounding PPDU */
 #define PHDR_802_11_DATA_NOT_CAPTURED             1 /* data not captured, (e.g. multi-user PPDU) */
+#define PHDR_802_11_S1G_NDP_CMAC_FRAME            2 /* S1G NDP CMAC frame */
 #define PHDR_802_11_0_LENGTH_PSDU_VENDOR_SPECIFIC 0xff
 
 /* Packet "pseudo-header" for the output from CoSine L2 debug output. */
